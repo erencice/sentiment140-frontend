@@ -4,6 +4,8 @@
   --color-brand: #2563eb;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* smooth transitions on theme toggle */
 html { color-scheme: light; }
 html.dark { color-scheme: dark; }
