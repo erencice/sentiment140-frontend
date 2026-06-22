@@ -17,14 +17,14 @@ export function ResultCard({ prediction, text }: Props): JSX.Element {
     'bg-red-500';
 
   const bgColor =
-    confPct >= 80 ? 'bg-emerald-50 dark:bg-emerald-950/30' :
-    confPct >= 60 ? 'bg-amber-50 dark:bg-amber-950/30' :
-    'bg-red-50 dark:bg-red-950/30';
+    confPct >= 80 ? 'bg-emerald-50/80 dark:bg-emerald-950/30' :
+    confPct >= 60 ? 'bg-amber-50/80 dark:bg-amber-950/30' :
+    'bg-red-50/80 dark:bg-red-950/30';
 
   const borderColor =
-    confPct >= 80 ? 'border-emerald-200 dark:border-emerald-800/40' :
-    confPct >= 60 ? 'border-amber-200 dark:border-amber-800/40' :
-    'border-red-200 dark:border-red-800/40';
+    confPct >= 80 ? 'border-emerald-200 shadow-sm dark:border-emerald-800/40 dark:shadow-none' :
+    confPct >= 60 ? 'border-amber-200 shadow-sm dark:border-amber-800/40 dark:shadow-none' :
+    'border-red-200 shadow-sm dark:border-red-800/40 dark:shadow-none';
 
   return (
     <div

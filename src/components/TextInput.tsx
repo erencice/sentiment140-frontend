@@ -42,7 +42,7 @@ export function TextInput({ value, onChange, onAnalyze, loading }: Props): JSX.E
           rows={1}
           disabled={loading}
           spellCheck={false}
-          className="w-full resize-none rounded-xl border border-gray-200 bg-gray-50/50 px-4 py-3.5 text-sm leading-relaxed text-gray-900 placeholder:text-gray-400 transition-colors focus:border-gray-300 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-900/50 dark:text-gray-100 dark:placeholder:text-gray-500 dark:focus:border-gray-600 dark:focus:bg-gray-900"
+          className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-sm leading-relaxed text-gray-800 shadow-sm placeholder:text-gray-400 transition-all hover:border-gray-300 focus:border-gray-400 focus:bg-white focus:shadow-md focus:outline-hidden dark:border-gray-700 dark:bg-gray-900/50 dark:text-gray-100 dark:placeholder:text-gray-500 dark:shadow-none dark:hover:border-gray-600 dark:focus:border-gray-500 dark:focus:bg-gray-900"
           aria-describedby="input-hint"
         />
         <p id="input-hint" className="mt-1.5 text-xs text-gray-400 dark:text-gray-500">

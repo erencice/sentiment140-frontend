@@ -35,7 +35,7 @@ export default function App(): JSX.Element {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-white text-gray-900 transition-colors dark:bg-gray-950 dark:text-gray-100">
+    <div className="flex min-h-screen flex-col bg-[#f8f9fc] text-gray-800 transition-colors dark:bg-gray-950 dark:text-gray-100">
       <Header dark={dark} onToggle={() => setDark(v => !v)} />
 
       <main className="flex-1">
@@ -52,7 +52,7 @@ export default function App(): JSX.Element {
           <button
             onClick={handleSubmit}
             disabled={loading || !text.trim()}
-            className="flex h-11 items-center gap-2 rounded-xl bg-gray-900 px-6 text-sm font-medium text-white transition-all hover:bg-gray-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200 dark:focus-visible:outline-gray-100"
+            className="flex h-11 items-center gap-2 rounded-xl bg-gray-800 px-6 text-sm font-medium text-white shadow-sm transition-all hover:bg-gray-700 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-gray-100 dark:text-gray-900 dark:shadow-none dark:hover:bg-gray-200 dark:focus-visible:outline-gray-100"
           >
             {loading ? (
               <>

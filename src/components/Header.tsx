@@ -7,14 +7,14 @@ interface Props {
 
 export function Header({ dark, onToggle }: Props): JSX.Element {
   return (
-    <header className="sticky top-0 z-10 border-b border-gray-200/60 bg-white/80 backdrop-blur-sm dark:border-gray-800/60 dark:bg-gray-950/80">
+    <header className="sticky top-0 z-10 border-b border-gray-200/80 bg-white/80 shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] backdrop-blur-sm dark:border-gray-800/60 dark:bg-gray-950/80 dark:shadow-none">
       <div className="mx-auto flex h-14 max-w-2xl items-center justify-between px-4">
-        <span className="text-sm font-semibold tracking-tight text-gray-900 dark:text-gray-100">
+        <span className="text-sm font-semibold tracking-tight text-gray-800 dark:text-gray-100">
           Sentiment Analyzer
         </span>
         <button
           onClick={onToggle}
-          className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-400 transition-colors hover:bg-gray-200/60 hover:text-gray-600 dark:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-200"
           aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
         >
           {dark ? (
