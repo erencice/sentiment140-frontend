@@ -1,27 +1,15 @@
 @import "tailwindcss";
 
-/* brand palette */
 @theme {
   --color-brand: #2563eb;
-  --color-brand-dark: #1d4ed8;
-  --color-brand-light: #dbeafe;
-  --color-surface: #f8f9fc;
-  --color-surface-raised: #ffffff;
 }
 
 /* smooth transitions on theme toggle */
-html {
-  color-scheme: light;
-}
-html.dark {
-  color-scheme: dark;
-}
+html { color-scheme: light; }
+html.dark { color-scheme: dark; }
 
-* {
-  -webkit-tap-highlight-color: transparent;
-}
+* { -webkit-tap-highlight-color: transparent; }
 
-/* focus-visible: only on keyboard nav */
 *:focus-visible {
   outline: 2px solid #2563eb;
   outline-offset: 2px;
@@ -37,22 +25,3 @@ html.dark {
 .history-scroll::-webkit-scrollbar-track { background: transparent; }
 .history-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
 .dark .history-scroll::-webkit-scrollbar-thumb { background: #4b5563; }
-
-/* ── Light mode: warm paper texture ── */
-.bg-paper-light {
-  background-color: #f5efe2;
-  background-image: radial-gradient(circle, rgba(140, 110, 70, 0.035) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-.dark .bg-paper-light {
-  background-color: #030712;
-  background-image: none;
-}
-
-/* ── Light mode: hero warm glow ── */
-.hero-glow-light {
-  background: linear-gradient(to bottom, #f0e9d8, transparent);
-}
-.dark .hero-glow-light {
-  background: none;
-}

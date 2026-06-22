@@ -35,7 +35,7 @@ export default function App(): JSX.Element {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-paper-light text-[#3d3226] transition-colors dark:bg-gray-950 dark:text-gray-100">
+    <div className="flex min-h-screen flex-col bg-[#f3f4f6] text-gray-900 transition-colors dark:bg-gray-950 dark:text-gray-100">
       <Header dark={dark} onToggle={() => setDark(v => !v)} />
 
       <main className="flex-1">
@@ -52,7 +52,7 @@ export default function App(): JSX.Element {
           <button
             onClick={handleSubmit}
             disabled={loading || !text.trim()}
-            className="flex h-11 items-center gap-2 rounded-xl bg-[#c2410c] px-6 text-sm font-medium text-white shadow-[0_2px_8px_-2px_rgba(180,90,30,0.35)] transition-all hover:bg-[#b33407] hover:shadow-[0_4px_12px_-2px_rgba(180,90,30,0.4)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c2410c] disabled:cursor-not-allowed disabled:opacity-40 dark:bg-gray-100 dark:text-gray-900 dark:shadow-none dark:hover:bg-gray-200 dark:focus-visible:outline-gray-100"
+            className="flex h-11 items-center gap-2 rounded-xl bg-gray-900 px-6 text-sm font-medium text-white shadow-[0_1px_3px_0_rgba(0,0,0,0.12)] transition-all hover:bg-gray-800 hover:shadow-[0_4px_8px_-2px_rgba(0,0,0,0.15)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-gray-100 dark:text-gray-900 dark:shadow-none dark:hover:bg-gray-200 dark:focus-visible:outline-gray-100"
           >
             {loading ? (
               <>
