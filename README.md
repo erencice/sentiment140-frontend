@@ -1,6 +1,12 @@
 # Sentiment140 Frontend
 
+> **Live:** [sentiment140.vercel.app](https://sentiment140.vercel.app)
+
 React + TypeScript + Vite frontend for the DistilBERT sentiment analysis API.
+
+- **Model:** [erencice/sentiment140-distilbert](https://huggingface.co/erencice/sentiment140-distilbert) (HF Hub)
+- **API:** [sentiment140-api.hf.space](https://erencice-sentiment140-api.hf.space/docs)
+- **Repo:** [github.com/erencice/sentiment140-frontend](https://github.com/erencice/sentiment140-frontend)
 
 ## Development
 
@@ -9,7 +15,7 @@ npm install
 npm run dev
 ```
 
-The dev server proxies `/api` requests to `http://localhost:8000`.
+Proxies `/api` to `http://localhost:8000`.
 
 ## Production
 
@@ -17,7 +23,7 @@ The dev server proxies `/api` requests to `http://localhost:8000`.
 npm run build
 ```
 
-Build output goes to `dist/`. The API endpoint is configured via `.env.production`:
+API endpoint in `.env.production`:
 
 ```
 VITE_API_URL=https://erencice-sentiment140-api.hf.space
@@ -25,7 +31,4 @@ VITE_API_URL=https://erencice-sentiment140-api.hf.space
 
 ## Stack
 
-- React 19
-- TypeScript
-- Vite 8
-- Tailwind CSS v4
+- React 19 · TypeScript · Vite 8 · Tailwind CSS v4
