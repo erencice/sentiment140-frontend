@@ -37,3 +37,22 @@ html.dark {
 .history-scroll::-webkit-scrollbar-track { background: transparent; }
 .history-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 2px; }
 .dark .history-scroll::-webkit-scrollbar-thumb { background: #4b5563; }
+
+/* ── Light mode: warm paper texture ── */
+.bg-paper-light {
+  background-color: #f5efe2;
+  background-image: radial-gradient(circle, rgba(140, 110, 70, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.dark .bg-paper-light {
+  background-color: #030712;
+  background-image: none;
+}
+
+/* ── Light mode: hero warm glow ── */
+.hero-glow-light {
+  background: linear-gradient(to bottom, #f0e9d8, transparent);
+}
+.dark .hero-glow-light {
+  background: none;
+}

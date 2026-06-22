@@ -17,14 +17,14 @@ export function ResultCard({ prediction, text }: Props): JSX.Element {
     'bg-red-500';
 
   const bgColor =
-    confPct >= 80 ? 'bg-emerald-50/80 dark:bg-emerald-950/30' :
-    confPct >= 60 ? 'bg-amber-50/80 dark:bg-amber-950/30' :
-    'bg-red-50/80 dark:bg-red-950/30';
+    confPct >= 80 ? 'bg-[#fcf7ed] dark:bg-emerald-950/30' :
+    confPct >= 60 ? 'bg-[#fcf7ed] dark:bg-amber-950/30' :
+    'bg-[#fcf7ed] dark:bg-red-950/30';
 
   const borderColor =
-    confPct >= 80 ? 'border-emerald-200 shadow-sm dark:border-emerald-800/40 dark:shadow-none' :
-    confPct >= 60 ? 'border-amber-200 shadow-sm dark:border-amber-800/40 dark:shadow-none' :
-    'border-red-200 shadow-sm dark:border-red-800/40 dark:shadow-none';
+    confPct >= 80 ? 'border-emerald-200 shadow-[0_4px_12px_-2px_rgba(160,120,80,0.12)] dark:border-emerald-800/40 dark:shadow-none' :
+    confPct >= 60 ? 'border-amber-200 shadow-[0_4px_12px_-2px_rgba(160,120,80,0.12)] dark:border-amber-800/40 dark:shadow-none' :
+    'border-red-200 shadow-[0_4px_12px_-2px_rgba(160,120,80,0.12)] dark:border-red-800/40 dark:shadow-none';
 
   return (
     <div
@@ -40,24 +40,24 @@ export function ResultCard({ prediction, text }: Props): JSX.Element {
           <span className={`text-sm font-semibold ${isPositive ? 'text-emerald-700 dark:text-emerald-300' : 'text-red-700 dark:text-red-300'}`}>
             {isPositive ? 'Positive' : 'Negative'}
           </span>
-          <p className="mt-0.5 text-sm text-gray-500 dark:text-gray-400 line-clamp-2">
+          <p className="mt-0.5 text-sm text-[#7d6f5a] dark:text-gray-400 line-clamp-2">
             {text}
           </p>
         </div>
       </div>
 
       <div className="mt-4">
-        <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+        <div className="flex items-center justify-between text-xs text-[#7d6f5a] dark:text-gray-400">
           <span>Confidence</span>
           <span className="font-medium tabular-nums">{confPct}%</span>
         </div>
-        <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-gray-200/70 dark:bg-gray-700/70">
+        <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-[#e5d9c4]/70 dark:bg-gray-700/70">
           <div
             className={`h-full rounded-full transition-all duration-500 ease-out ${barColor}`}
             style={{ width: `${confPct}%` }}
           />
         </div>
-        <div className="mt-2 flex justify-between text-[11px] text-gray-400 dark:text-gray-500">
+        <div className="mt-2 flex justify-between text-[11px] text-[#9c8f7a] dark:text-gray-500">
           <span>Negative: {Math.round(prediction.probabilities.negative * 100)}%</span>
           <span>Positive: {Math.round(prediction.probabilities.positive * 100)}%</span>
         </div>

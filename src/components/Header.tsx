@@ -7,14 +7,14 @@ interface Props {
 
 export function Header({ dark, onToggle }: Props): JSX.Element {
   return (
-    <header className="sticky top-0 z-10 border-b border-gray-200/80 bg-white/80 shadow-[0_1px_3px_0_rgba(0,0,0,0.04)] backdrop-blur-sm dark:border-gray-800/60 dark:bg-gray-950/80 dark:shadow-none">
+    <header className="sticky top-0 z-10 border-b border-[#e5d9c4] bg-[#faf4e8]/90 shadow-[0_1px_3px_0_rgba(160,120,80,0.08)] backdrop-blur-sm dark:border-gray-800/60 dark:bg-gray-950/80 dark:shadow-none">
       <div className="mx-auto flex h-14 max-w-2xl items-center justify-between px-4">
-        <span className="text-sm font-semibold tracking-tight text-gray-800 dark:text-gray-100">
+        <span className="text-sm font-semibold tracking-tight text-[#3d3226] dark:text-gray-100">
           Sentiment Analyzer
         </span>
         <button
           onClick={onToggle}
-          className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-400 transition-colors hover:bg-gray-200/60 hover:text-gray-600 dark:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          className="flex h-8 w-8 items-center justify-center rounded-lg text-[#9c8f7a] transition-colors hover:bg-[#ede5d4]/70 hover:text-[#5c4f3e] dark:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-200"
           aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
         >
           {dark ? (

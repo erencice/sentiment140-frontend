@@ -42,11 +42,11 @@ export function TextInput({ value, onChange, onAnalyze, loading }: Props): JSX.E
           rows={1}
           disabled={loading}
           spellCheck={false}
-          className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-3.5 text-sm leading-relaxed text-gray-800 shadow-sm placeholder:text-gray-400 transition-all hover:border-gray-300 focus:border-gray-400 focus:bg-white focus:shadow-md focus:outline-hidden dark:border-gray-700 dark:bg-gray-900/50 dark:text-gray-100 dark:placeholder:text-gray-500 dark:shadow-none dark:hover:border-gray-600 dark:focus:border-gray-500 dark:focus:bg-gray-900"
+          className="w-full resize-none rounded-xl border border-[#e5d9c4] bg-[#fdf9f2] px-4 py-3.5 text-sm leading-relaxed text-[#3d3226] shadow-[0_1px_2px_rgba(140,110,70,0.08)] placeholder:text-[#b5a794] transition-all hover:border-[#d6c8ae] focus:border-[#c2410c] focus:bg-[#fefcf6] focus:shadow-[0_4px_8px_-2px_rgba(140,110,70,0.12)] focus:outline-hidden dark:border-gray-700 dark:bg-gray-900/50 dark:text-gray-100 dark:placeholder:text-gray-500 dark:shadow-none dark:hover:border-gray-600 dark:focus:border-gray-500 dark:focus:bg-gray-900"
           aria-describedby="input-hint"
         />
-        <p id="input-hint" className="mt-1.5 text-xs text-gray-400 dark:text-gray-500">
-          Press <kbd className="rounded border border-gray-200 px-1 py-0.5 font-sans text-[11px] dark:border-gray-700">⌘Enter</kbd> to analyze
+        <p id="input-hint" className="mt-1.5 text-xs text-[#b5a794] dark:text-gray-500">
+          Press <kbd className="rounded border border-[#e5d9c4] px-1 py-0.5 font-sans text-[11px] dark:border-gray-700">⌘Enter</kbd> to analyze
         </p>
       </div>
     </div>

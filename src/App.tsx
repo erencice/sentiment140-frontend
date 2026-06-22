@@ -35,7 +35,7 @@ export default function App(): JSX.Element {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#f8f9fc] text-gray-800 transition-colors dark:bg-gray-950 dark:text-gray-100">
+    <div className="flex min-h-screen flex-col bg-paper-light text-[#3d3226] transition-colors dark:bg-gray-950 dark:text-gray-100">
       <Header dark={dark} onToggle={() => setDark(v => !v)} />
 
       <main className="flex-1">
@@ -52,7 +52,7 @@ export default function App(): JSX.Element {
           <button
             onClick={handleSubmit}
             disabled={loading || !text.trim()}
-            className="flex h-11 items-center gap-2 rounded-xl bg-gray-800 px-6 text-sm font-medium text-white shadow-sm transition-all hover:bg-gray-700 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 disabled:cursor-not-allowed disabled:opacity-40 dark:bg-gray-100 dark:text-gray-900 dark:shadow-none dark:hover:bg-gray-200 dark:focus-visible:outline-gray-100"
+            className="flex h-11 items-center gap-2 rounded-xl bg-[#c2410c] px-6 text-sm font-medium text-white shadow-[0_2px_8px_-2px_rgba(180,90,30,0.35)] transition-all hover:bg-[#b33407] hover:shadow-[0_4px_12px_-2px_rgba(180,90,30,0.4)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c2410c] disabled:cursor-not-allowed disabled:opacity-40 dark:bg-gray-100 dark:text-gray-900 dark:shadow-none dark:hover:bg-gray-200 dark:focus-visible:outline-gray-100"
           >
             {loading ? (
               <>
@@ -67,7 +67,7 @@ export default function App(): JSX.Element {
 
         {error && (
           <div className="mx-auto mt-4 max-w-xl px-4" role="alert">
-            <p className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600 dark:bg-red-950/30 dark:text-red-400">
+            <p className="rounded-lg bg-red-50/80 px-4 py-3 text-sm text-red-600 dark:bg-red-950/30 dark:text-red-400">
               {error}
             </p>
           </div>
